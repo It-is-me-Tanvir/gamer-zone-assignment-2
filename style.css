@@ -206,6 +206,7 @@ nav {
 
 .games div:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .online-games h2 {
@@ -311,7 +312,6 @@ nav {
 /* card section */
 
 .card-sec {
-    /* height: 427; */
     background-color: #fff9fc;
     display: flex;
     justify-content: space-around;
@@ -344,15 +344,76 @@ nav {
 
 .card h4:hover {
     color: #ff42a5;
+    cursor: pointer;
 }
 
 .card:hover {
     border: 1px solid #ff42a5;
+    cursor: pointer;
 }
 
 
 /* play section end */
 
+/* footer section */
+
+footer {
+    background: #0B0223;
+    text-align: center;
+    padding: 80px 0px 30px 0px;
+}
+
+.logo-footer h1 {
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.logo-footer h1 span {
+    color: #FF42A5;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-list li {
+    margin: 20px 20px 10px 20px;
+}
+
+.footer-img img {
+    margin: 12px 15px 25px 15px;
+}
+
+.footer-list2 {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-list2 li {
+    margin: 5px 30px 20px 30px;
+}
+
+
+/* footer section end */
 
 /* media quarie */
 
@@ -456,6 +517,17 @@ nav {
     }
 
     /* play section end */
+
+    /* card section */
+
+    .card-sec {
+        padding: 0;
+        background-color: #fff;
+        position: relative;
+        top: -1100px;
+    }
+
+    /* card section end */
 
 
 }
