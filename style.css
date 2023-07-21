@@ -153,8 +153,7 @@ nav {
     margin-bottom: 240px;
 }
 
-.games-cont,
-.game-dis {
+.games-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,8 +202,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .games div:hover {
@@ -228,7 +225,7 @@ nav {
 .online-games>p {
     color: #534C64;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 30px;
 }
 
@@ -238,17 +235,123 @@ nav {
     color: #ff42a5;
 }
 
-.game-dis p {
+.games>p {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 20px;
+}
+
+/* online games end */
+
+/* play section */
+
+.play {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.play-dis h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+.play-dis h2 samp {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-dis p {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 30px;
-    width: 342px;
+    width: 353px;
+}
+
+.play-dis {
+    height: 300px;
+    width: 341px;
+    text-align: left;
+    /* margin-left: 150px; */
+    position: relative;
+    right: -230px;
+}
+
+.play-img {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.play-img {
+    position: relative;
+    width: 634.833px;
+    height: 650px;
+}
+
+.play-img2 {
+    width: 318.5px;
+    height: 365.083px;
+    position: absolute;
+    bottom: -13%;
+    left: -15%;
+    margin: -50px 0 0 -50px;
+}
+
+/* play section end */
+
+/* card section */
+
+.card-sec {
+    /* height: 427; */
+    background-color: #fff9fc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 300px;
+}
+
+.card {
+    border-radius: 50px;
+    background: #FFF;
+    width: 0 auto;
+    height: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.card img {
+    margin-right: 16px;
+}
+
+.card h4 {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card h4:hover {
+    color: #ff42a5;
+}
+
+.card:hover {
+    border: 1px solid #ff42a5;
 }
 
 
-
-/* online games end */
+/* play section end */
 
 
 /* media quarie */
@@ -261,13 +364,21 @@ nav {
     }
 
     nav,
-    .navbar {
+    .navbar,
+    .online-games,
+    .games-cont,
+    .play {
         flex-direction: column;
+    }
+
+    nav {
+        padding: 25px 0;
     }
 
     .logo,
     .navbar {
         margin-bottom: 35px;
+        padding: 0;
     }
 
     .navbar h5 {
@@ -300,5 +411,51 @@ nav {
     }
 
     /* banner section end */
+
+    /* online game */
+
+    .online-games {
+        position: relative;
+        top: -600px;
+    }
+
+    .games {
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    /* online game end */
+
+    /* play section */
+
+    .play {
+        position: relative;
+        top: -780px;
+    }
+
+    .play-dis {
+        margin: auto;
+        position: static;
+    }
+
+    .play-dis h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .play-dis p {
+        text-align: center;
+    }
+
+    .play-img {
+        scale: 50%;
+        text-align: center;
+        margin-left: 60px;
+        position: relative;
+        top: -150px;
+    }
+
+    /* play section end */
+
 
 }
